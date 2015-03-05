@@ -1,0 +1,8 @@
+<h1>Will I need an umbrella?</h1>
+
+<%= form_tag 'weather/search', method: :get do %>
+  <%= label_tag :zipcode, "What's your zipcode?" %>
+  <%= text_field_tag :zipcode %>
+  <%= submit_tag 'Is it going to rain?' %>
+
+<% end  %>
